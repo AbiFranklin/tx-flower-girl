@@ -26,9 +26,9 @@ class App extends React.Component {
     })
   
     let data = {
-        name: this.state.name,
-        email: this.state.email,
-        message: this.state.message
+        "name": this.state.name,
+        "email": this.state.email,
+        "message": this.state.message
     }
     
     axios.post('https://tx-flower-girl-node-api-dauqz7oj8.now.sh/', data)
