@@ -31,6 +31,8 @@ class App extends React.Component {
         "message": this.state.message
     }
     
+    console.log(data)
+    
     axios.post("https://tx-flower-girl-node-api-dauqz7oj8.now.sh/", data)
     .then( res => {
         this.setState({ sent: true }, this.resetForm())
