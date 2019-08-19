@@ -3,7 +3,7 @@ import { Form, Button, Row, Col } from 'react-bootstrap'
 import axios from 'axios'
 
 
-class Form extends React.Component {
+class ContactForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = { 
@@ -81,4 +81,4 @@ class Form extends React.Component {
   }
 }
 
-export default Form;
+export default ContactForm;

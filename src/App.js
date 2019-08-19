@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Form from '../src/Components/Form'
+import ContactForm from '../src/Components/Form'
 
 
 class App extends React.Component {
@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Form />
+        <ContactForm />
       </div>
     );
   }
