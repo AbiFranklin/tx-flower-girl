@@ -33,7 +33,7 @@ class App extends React.Component {
     
     console.log(data)
     
-    axios.post("https://tx-flower-girl-node-api-dauqz7oj8.now.sh/", data)
+    axios.post("https://tx-flower-girl-node-api.abifranklin.now.sh/", data)
     .then( res => {
         this.setState({ sent: true }, this.resetForm())
     })
