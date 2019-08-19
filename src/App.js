@@ -31,7 +31,7 @@ class App extends React.Component {
         "message": this.state.message
     }
     
-    axios.post('https://tx-flower-girl-node-api-dauqz7oj8.now.sh/', data)
+    axios.post('http://tx-flower-girl-node-api-dauqz7oj8.now.sh/', data)
     .then( res => {
         this.setState({ sent: true }, this.resetForm())
     })
@@ -65,7 +65,7 @@ class App extends React.Component {
           <Col>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" onChange={e => this.setState({ email: e.target.value })}/>
+            <Form.Control type="email" placeholder="Enter email" onChange={e => this.setState({ email: e.target.value })} onSubmit={e => e.target.value = ''}/>
           </Form.Group>
           </Col>
           </Form.Row>
