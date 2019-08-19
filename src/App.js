@@ -31,7 +31,9 @@ class App extends React.Component {
         "message": this.state.message
     }
     
-    axios.post('http://tx-flower-girl-node-api-dauqz7oj8.now.sh/', data)
+    console.log(data)
+    
+    axios.post("https://tx-flower-girl-node-api.abifranklin.now.sh/", data)
     .then( res => {
         this.setState({ sent: true }, this.resetForm())
     })
@@ -49,6 +51,7 @@ class App extends React.Component {
         buttontext: 'Sent!',
         buttonvar: 'success'
     })
+    document.getElementById("App").reset();
   }
 
   render() {
